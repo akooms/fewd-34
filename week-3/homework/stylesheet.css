@@ -1,0 +1,228 @@
+  /*set background image*/
+  body{
+    background-image: url("images/background.png");
+    margin: auto;
+  }
+
+  /*create header banner*/
+  header{
+    height: 100px;
+    background-color: rgb(196,196,196); /*gray*/
+    border: 1px solid gray;
+    width: 100%;
+  }
+
+
+
+  ul{
+    position: absolute;
+    right: 40px;
+    top:15px;
+  }
+
+  li{
+    display: inline;
+  }
+
+  /*set gap between home and products*/
+  li:first-child{
+    margin-right: 40px;
+  }
+
+  li:nth-child(2){
+    margin-right: 40px;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Arial;
+    text-shadow: 1px 1px black;
+    position:relative;
+    right:40px;
+  }
+
+
+
+  button{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Arial;
+    text-shadow: 1px 1px black;
+    background-color: rgb(44,79,176);
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 2em;
+    width: 5.4em;
+    cursor: pointer; cursor: hand;
+  }
+
+  button:hover{
+    background-color: rgb(31,233,45);
+  }
+
+  h1{
+    text-align: left;
+    font-family: Arial;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  p{
+    text-align: left;
+    font-family: Arial;
+    font-size: 1.2em;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  main{
+    background-color: rgb(255,255,255);
+    border: 1px solid gray;
+    box-shadow: 1px -1px 12px 2px rgba(189,189,189,0.73);
+    position: relative;
+    top: 50px;
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+  }
+
+  hr{
+    width: 60%;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom:20px;
+
+  }
+  footer{
+    position:relative;
+    top: 120px;
+    font-size: 13px;
+    font-weight:500;
+    font-family: Arial;
+    color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+  }
+
+  td{
+    font-family: Arial;
+  }
+
+  .details-button{
+
+    text-align: auto;
+    font-family: Arial;
+    font-size: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white !important;
+
+  }
+
+  .fixbutton{
+    text-align: auto;
+    font-family: Arial;
+    font-size: auto;
+
+
+  }
+
+  .buttonfontcolor{
+  color: rgb(50,69,237);
+  border-color:blue;
+  text-decoration: none;
+  text-shadow: none;
+  }
+
+  .logo{
+    width: 270px;
+    margin-top: 11px;
+    margin-left: 10px;
+  }
+
+  .cart-button{
+    background-color: rgb(9,35,251);
+    width: auto;
+    border-color: blue;
+    position: relative;
+    right: -152px;
+    top: -64px;
+  }
+
+  .product-image{
+    width: 270px;
+    margin-left: 27px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .product-image {
+        width:100%;
+    }
+  }
+
+  .producttext {
+    position: relative;
+    top: -31px;
+  }
+
+  .lastitem{
+    margin-top: 30px;
+  }
+
+  .sp{
+
+    margin-top: 108px;
+  }
+
+  .signupbutton{
+    right:0px;
+  }
+
+  .signup{
+    margin-left: 30px;
+    font-family: Arial;
+    margin-bottom: 30px;
+  }
+
+  input[type=text] {
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: red;
+    padding-left: 3px;
+    margin: 0 50% 0 4%;
+
+
+  }
+
+
+  input[type=text]:focus {
+
+
+    box-shadow: 1px 3px 26px 3px rgba(97,166,83,1);
+  }
+
+
+  input[type=checkbox]{
+    margin: 0 6% 0 0%;
+
+  }
+
+  .signinbutton{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial;
+    text-shadow: none;
+    background-color: rgb(250,250,250);
+    border: auto;
+    border-radius: auto;
+    height: auto;
+    width: auto;
+    cursor: pointer; cursor: hand;
+  }
