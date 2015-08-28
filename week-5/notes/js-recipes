@@ -1,0 +1,44 @@
+<script>
+
+  // JS recipes
+
+  // Adding/changing an element's value
+
+  // If the element is already on the page:
+
+  var el = document.querySelector("img");
+  el.setAttribute("src", "http://example.com/logo.png");
+
+  // If the element is NOT on the page (new el):
+  var el = document.createElement("img");
+  el.setAttribute("src", "http://examplecom/logo.png");
+
+  // Adding/changing an element's textContent
+    // textContent? - Text
+    // what type of element? - Name
+    // where to? / which parent element? - Parent
+  var el = document.createElement("li")
+  el.textContent = "Go grocery shopping...";
+  var parentEl = document.querySelector("ul");
+  parentEl.appendChild(el);
+
+    // ^^ This can be done as a fucntion as well
+    function  addElement(name, parent, text){
+      var el = document.createElement("li")
+      el.textContent = "Go grocery shopping...";
+      var parentEl = document.querySelector("ul");
+      parentEl.appendChild(el);
+    }
+
+  // If the element is NOT on the page (new el):
+  var el = document.createElement("p");
+  el.textContent = "The quick brown fox...";
+
+</script>
+
+<script>
+
+  function add()
+    var e1 = document.querySelector
+
+</script>
