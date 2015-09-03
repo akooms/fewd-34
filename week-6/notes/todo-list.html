@@ -1,0 +1,42 @@
+
+<!-- saved from url=(0051)http://avandamiri.com/fewd-34/week-6/todo-list.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style></head><body><form id="new-todo-item-form">
+  <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
+  <button type="submit">Create todo</button>
+</form>
+
+<hr>
+
+<ul id="todo-list">
+</ul>
+
+<script>
+
+  // Create a function addToList
+  // Pass event so page doesn't keep reloading every time function is called
+  function addToList(event){
+
+    event.preventDefault(); // Prevent page from reloading
+    // Take input from field as a value
+    var newInput = document.querySelector("#new-todo-item-input").value;
+    var listElement = document.createElement("li"); // Create line item
+    var list = document.querySelector("#todo-list"); // Select the ul
+
+    listElement.textContent = newInput; // Set the line item to input
+    list.appendChild(listElement); // Append input to ul
+
+  }
+
+  // Add an event listener to the button as a click
+  // Run addToList function when clicked
+  var newadd = document.querySelector("button");
+  newadd.addEventListener("click", addToList);
+
+</script>
+
+<style>
+#new-todo-item-input {
+  width: 200px;
+}
+</style>
+</body></html>

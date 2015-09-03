@@ -1,0 +1,97 @@
+
+<!-- saved from url=(0046)http://avandamiri.com/fewd-34/week-6/calc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+* { box-sizing: border-box; }
+body { font-size: 20px; font-family: sans-serif; }
+
+td { width: 100px; text-align: center; }
+.placeholder, button { width: 100%; }
+.placeholder { height: 23px; border: 1px solid #bababa; border-radius: 3px; }
+button { cursor: pointer; border: 1px solid #58c0f5; color: #58c0f5; background-color: white; font: inherit; }
+button { background-color: #58c0f5; color: white; border-radius: 3px; }
+</style>
+
+<style type="text/css"></style></head><body><table>
+  <tbody><tr>
+    <td>
+      <input type="text" class="first-operand placeholder">
+    </td>
+    <td>
+      <input type="text" class="second-operand placeholder">
+    </td>
+    <td>
+      =
+    </td>
+    <td>
+      <input type="text" class="result placeholder" disabled="">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button class="add-button inverted-button">+</button>
+    </td>
+    <td>
+      <button class="subtract-button inverted-button">-</button>
+    </td>
+    <td>
+      <button class="multiply-button inverted-button">*</button>
+    </td>
+    <td>
+      <button class="divide-button inverted-button">/</button>
+    </td>
+  </tr>
+</tbody></table>
+
+<script>
+  var addB = document.querySelector(".add-button");
+  var subB = document.querySelector(".subtract-button")
+  var multB = document.querySelector(".multiply-button")
+  var divB = document.querySelector(".divide-button")
+
+  addB.addEventListener("click", sum);
+  subB.addEventListener("click", subtract);
+  multB.addEventListener("click", multiply);
+  divB.addEventListener("click", divide);
+
+  var e1 = document.querySelector(".first-operand");
+  var e2 = document.querySelector(".second-operand");
+  var r1 = document.querySelector(".result");
+
+
+  function sum(){
+
+
+    var n1 = parseInt(e1.value);
+    var n2 = parseInt(e2.value);
+
+    r1.value = n1 + n2;
+
+  }
+
+  function subtract(){
+
+    var n1 = parseInt(e1.value);
+    var n2 = parseInt(e2.value);
+
+    r1.value = n1 - n2;
+
+  }
+
+  function multiply(){
+
+    var n1 = parseInt(e1.value);
+    var n2 = parseInt(e2.value);
+
+    r1.value = n1 * n2;
+  }
+
+  function divide(){
+
+    var n1 = parseInt(e1.value);
+    var n2 = parseInt(e2.value);
+
+    r1.value = n1 / n2;
+  }
+
+</script>
+</body></html>
