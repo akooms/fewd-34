@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://avandamiri.com/fewd-34/week-7/movies.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Movies</title>
+
+    <style>
+      body {
+        font-family: Arial;
+      }
+      #movies {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .movie {
+        overflow: auto;
+      }
+      .movie:not(:last-child) {
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #b6b6b6;
+      }
+      .movie img {
+        float: left;
+        width: 100px;
+        margin-right: 20px;
+      }
+      .movie-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: .5em;
+      }
+      .movie-release-date {
+        color: #b6b6b6;
+      }
+    </style>
+  <style type="text/css"></style></head>
+  <body>
+    <h1>Movies</h1>
+
+    <button id="list-movies">listMovies()</button>
+
+    <ul id="movies">
+      <!--li class="movie">
+        <img src="http://ia.media-imdb.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_SY317_CR0,0,214,317_AL_.jpg">
+        <div class="movie-title">Cool Runnings</div>
+        <div class="movie-release-date">1993</div>
+      </li-->
+    </ul>
+
+    <script>
+    // Array of movies (don't change this)
+    var movies = [
+      {
+        title: "Cool Runnings",
+        releaseDate: "1993",
+        image: "http://ia.media-imdb.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_SY317_CR0,0,214,317_AL_.jpg"
+      },
+      {
+        title: "Terminator 2",
+        releaseDate: "1991",
+        image: "http://ia.media-imdb.com/images/M/MV5BMTg5NzUwMDU5NF5BMl5BanBnXkFtZTcwMjk2MDA4Mg@@._V1_SY317_CR18,0,214,317_AL_.jpg"
+      },
+      {
+        title: "Interstellar",
+        releaseDate: "2014",
+        image: "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX214_AL_.jpg"
+      }
+    ];
+
+    function displayMovies(movie){
+
+      // Target the ul since that what we'll be working inside
+      var movieList = document.querySelector("#movies");
+
+
+      // Create  list element inside the ul and call it movieItem
+      // Add a class to this movie item
+      // Append this movie item to the ul we created above
+      var movieItem = document.createElement("li");
+      movieItem.classList.add("movie");
+      movieList.appendChild(movieItem);
+
+      // Create an image element
+      // Set an attribute to it
+      // Append this image to the list we created above
+      var imageItem = document.createElement("img");
+      imageItem.setAttribute("src", movie.image);
+      movieItem.appendChild(imageItem);
+
+      // Create a div for the title
+      // Set text
+      // Add the title class to it
+      // Append it to the list
+      var titleItem = document.createElement("div");
+      titleItem.textContent = movie.title;
+      titleItem.classList.add("movie-title");
+      movieItem.appendChild(titleItem);
+
+      // Create a div for the release Date
+      // Set text
+      // Add the release date class to it
+      // Append it to the list
+      var releaseDateItem = document.createElement("div");
+      releaseDateItem.textContent = movie.releaseDate;
+      releaseDateItem.classList.add("movie-release-date");
+      movieItem.appendChild(releaseDateItem);
+
+
+    }
+
+    // Run the displayMovies function for each movie
+    function printMovies(event){
+      event.preventDefault();
+      movies.forEach(displayMovies);
+    }
+
+    // Add event listener to the button
+    // run the printMovies when clicked
+    var clickButton = document.querySelector("#list-movies");
+    clickButton.addEventListener("click", printMovies);
+
+    </script>
+
+
+</body></html>
