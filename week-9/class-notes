@@ -1,0 +1,37 @@
+1) Page loads
+2) Form is submitted
+    2a) Grab input value
+    2b) Send to OMDB
+    2c) Clear existing results
+3) Success! OMDB returns
+    3a) Results {[]} - object with results inside of it
+4) Callback for loop
+
+-----------------------------HW 7 Steps-----------------------------------------
+"Keyframes" - What are the steps in running the movie list pageX
+
+1) Page loads with Title and a CTA (button)
+2) Button is clicked triggering an event listener
+3) A list of movies are printed on the page
+-----------------------------HW 7 Steps End-------------------------------------
+
+
+-----------------------------Movie Search Steps---------------------------------
+
+1) Page loads
+    1a) Event listener
+        1aa) What? <form>
+        1ab) Event? "submit"
+        1ac) Event handler (gets you to Form Submits)
+2) Form Submits
+    2a) Grab input val // var value =  $("query").val()
+    2b) Send request to omdb // "http://omdbapi.com/?s="+value;
+    2b) $.get(url, )
+    2c) Prevent default
+3) Results Come Back
+    3a) Open (unpack) data/results "Find the array"
+4) Movie Displayed
+    4a) Create new elements (x4)
+    4b) Set elements text content (x2)
+    4c) Set elements attribute (x2)
+    4d) Add classes (x3)

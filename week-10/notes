@@ -1,0 +1,27 @@
+Week 10 - Tuesday - 9/22
+
+Conditionals are dependent on a Boolean expression
+Primarily used w/ IF statements
+
+if(isSunShining()){
+
+  x ----> ("Beautiful day, eh?")
+
+} else{
+
+
+}
+
+var x = 50;
+var y = 75;
+var z = 90;
+
+if(x > 25){
+
+
+}
+
+if(x > 25 && y < 60){
+
+
+}
